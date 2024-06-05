@@ -7,7 +7,7 @@ import { Product } from '../types/product';
   providedIn: 'root',
 })
 export class ProductService {
-  private apiURL = 'http://localhost:3000/products';
+  private apiURL = 'https://api-xuong-angular.onrender.com/products';
 
   constructor(private http: HttpClient) {}
 
