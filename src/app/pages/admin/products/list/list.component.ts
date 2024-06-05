@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Product } from '../../../../types/product';
 import { ProductService } from '../../../../services/product.service';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Router, RouterLink } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -11,7 +11,7 @@ import { RouterModule, Router, RouterLink } from '@angular/router';
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
 })
-export class ListComponent implements OnInit {
+export class ListComponent {
   products: Product[] = [];
 
   productService = inject(ProductService);

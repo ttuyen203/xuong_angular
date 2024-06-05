@@ -2,39 +2,31 @@
   "products": [
     {
       "id": 1,
-      "title": "Laptop",
-      "image": "https://picsum.photos/id/237/200/300",
-      "description": "A high-performance laptop suitable for all your needs.",
-      "price": 1200,
+      "title": "iPhone 11",
+      "image": "https://res.cloudinary.com/dymajn3ys/image/upload/v1717601011/Products/sp10_m2yzxp.jpg",
+      "description": "A powerful smartphone with impressive features.",
+      "price": 1000,
+      "category": "Apple",
       "show": true
     },
     {
       "id": 2,
-      "title": "Smartphone",
-      "image": "https://picsum.photos/id/230/200/300",
-      "description": "A latest-generation smartphone with amazing features.",
-      "price": 800,
+      "title": "iPhone 12",
+      "image": "https://res.cloudinary.com/dymajn3ys/image/upload/v1717601017/Products/sp11_plvr2g.jpg",
+      "description": "The latest flagship smartphone from Apple.",
+      "price": 1200,
+      "category": "Apple",
       "show": true
     },
     {
       "id": 3,
-      "title": "Headphones",
-      "image": "https://picsum.photos/id/227/200/300",
-      "description": "Noise-cancelling over-ear headphones for music lovers.",
-      "price": 200,
-      "show": false
+      "title": "Samsung S21",
+      "image": "https://res.cloudinary.com/dymajn3ys/image/upload/v1717601040/Products/sp3_icj9a3.jpg",
+      "description": "A cutting-edge smartphone with top-notch features.",
+      "price": 1100,
+      "category": "Samsung",
+      "show": true
     }
   ],
-  "categories": [
-    {
-      "id": 1,
-      "title": "Electronics",
-      "description": "Devices and gadgets including smartphones, laptops, and more."
-    },
-    {
-      "id": 2,
-      "title": "Accessories",
-      "description": "Various accessories for your devices and gadgets."
-    }
-  ]
+  "user": []
 }

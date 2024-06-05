@@ -13,6 +13,10 @@
           class="mt-1 block w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
           formControlName="title"
         />
+        @if(addForm.controls['title'].errors?.['required'] &&
+        addForm.controls['title'].touched ) {
+        <small class="text-red-500 font-bold">*Required</small>
+        }
       </div>
       <div>
         <label for="image_url" class="block text-sm font-medium text-gray-700"
@@ -25,6 +29,10 @@
           class="mt-1 block w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
           formControlName="image"
         />
+        @if(addForm.controls['image'].errors?.['required'] &&
+        addForm.controls['image'].touched ) {
+        <small class="text-red-500 font-bold">*Required</small>
+        }
       </div>
       <div>
         <label for="description" class="block text-sm font-medium text-gray-700"
@@ -36,6 +44,10 @@
           class="mt-1 block w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
           formControlName="description"
         ></textarea>
+        @if(addForm.controls['description'].errors?.['required'] &&
+        addForm.controls['description'].touched ) {
+        <small class="text-red-500 font-bold">*Required</small>
+        }
       </div>
       <div>
         <label for="price" class="block text-sm font-medium text-gray-700"
@@ -48,6 +60,10 @@
           class="mt-1 block w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
           formControlName="price"
         />
+        @if(addForm.controls['price'].errors?.['required'] &&
+        addForm.controls['price'].touched ) {
+        <small class="text-red-500 font-bold">*Required</small>
+        }
       </div>
       <div>
         <label for="category" class="block text-sm font-medium text-gray-700"
@@ -60,8 +76,8 @@
           formControlName="category"
         >
           <option value="">Select category</option>
-          <option value="Electronics">Electronics</option>
-          <option value="Accessories">Accessories</option>
+          <option value="Apple">Apple</option>
+          <option value="Samsung">Samsung</option>
         </select>
       </div>
       <div class="flex items-center">
@@ -86,6 +102,7 @@
         <button
           type="submit"
           class="px-4 py-2 font-semibold rounded-md text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring focus:border-green-300"
+          [disabled]="addForm.invalid"
         >
           Add
         </button>
