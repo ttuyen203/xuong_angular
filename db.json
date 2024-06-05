@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "A high-performance laptop suitable for all your needs.",
+      "price": 1200,
+      "show": true
+    },
+    {
+      "id": 2,
+      "title": "Smartphone",
+      "image": "https://picsum.photos/id/230/200/300",
+      "description": "A latest-generation smartphone with amazing features.",
+      "price": 800,
+      "show": true
+    },
+    {
+      "id": 3,
+      "title": "Headphones",
+      "image": "https://picsum.photos/id/227/200/300",
+      "description": "Noise-cancelling over-ear headphones for music lovers.",
+      "price": 200,
+      "show": false
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Electronics",
+      "description": "Devices and gadgets including smartphones, laptops, and more."
+    },
+    {
+      "id": 2,
+      "title": "Accessories",
+      "description": "Various accessories for your devices and gadgets."
+    }
+  ]
+}
